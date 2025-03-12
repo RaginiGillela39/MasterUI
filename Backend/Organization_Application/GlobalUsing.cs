@@ -1,0 +1,20 @@
+﻿global using Organization_Domain.Entities;
+global using System.Linq.Expressions;
+global using MediatR;
+global using TQMS_Organization_Application.Constant;
+global using TQMS_Organization_Application.Contracts.IValidations;
+global using TQMS_Organization_Application.Contracts.Repository;
+global using TQMS_Organization_Application.Wrappers;
+global using CommunityToolkit.Diagnostics;
+global using AutoMapper;
+global using TQMS_Organization_Application.Features.Organization.Commands.CreateOrganization;
+global using TQMS_Organization_Application.Features.OrganizationType.Commands.CreateOrganizationTYpe;
+global using TQMS_Branch_Application.Features.Branch.Command.CreateBranch;
+global using TQMS_Admin_Domain.Entities;
+global using TQMS_Admin_Application.Contracts.IValidations;
+global using TQMS_Admin_Application.Contracts.Repository;
+global using Microsoft.Extensions.DependencyInjection;
+global using System.Reflection;
+global using TQMS_Admin_Application.Validations;
+global using TQMS_Organization_Application.Validations;
+

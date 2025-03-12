@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TQMS_Admin_API.props" />
+</Project>

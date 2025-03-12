@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "jJtvQRkXnDYHMsHlS1ajY5eKJ5VloPZlSDxV8FWTSi0=",
+  "Source": "TQMS_Admin_API",
+  "BasePath": "_content/TQMS_Admin_API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

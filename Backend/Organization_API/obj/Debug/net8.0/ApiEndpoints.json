@@ -1,0 +1,1052 @@
+[
+  {
+    "ContainingType": "Branch_API.Controllers.BranchController",
+    "Method": "Create",
+    "RelativePath": "api/Branch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createBranchCommand",
+        "Type": "TQMS_Branch_Application.Features.Branch.Command.CreateBranch.CreateBranchCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Branch_API.Controllers.BranchController",
+    "Method": "Update",
+    "RelativePath": "api/Branch/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "TQMS_Branch_Application.Features.Branch.Command.UpdateBranch.UpdateBranchCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Branch_API.Controllers.BranchController",
+    "Method": "Delete",
+    "RelativePath": "api/Branch/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Branch_API.Controllers.BranchController",
+    "Method": "GetAllActive",
+    "RelativePath": "api/Branch/active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Branch_API.Controllers.BranchController",
+    "Method": "GetAll",
+    "RelativePath": "api/Branch/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Branch_API.Controllers.BranchController",
+    "Method": "GetById",
+    "RelativePath": "api/Branch/getById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Branch_API.Controllers.BranchController",
+    "Method": "Reactivate",
+    "RelativePath": "api/Branch/reactive/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Organization_API.Controllers.DepartmentController",
+    "Method": "Create",
+    "RelativePath": "api/Department",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDepartmentCommand",
+        "Type": "TQMS_Department_Application.Features.Department.Command.CreateDepartment.CreateDepartmentCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Organization_API.Controllers.DepartmentController",
+    "Method": "Update",
+    "RelativePath": "api/Department/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "TQMS_Department_Application.Features.Department.Command.UpdateDepartment.UpdateDepartmentCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Organization_API.Controllers.DepartmentController",
+    "Method": "Delete",
+    "RelativePath": "api/Department/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Organization_API.Controllers.DepartmentController",
+    "Method": "GetAllActive",
+    "RelativePath": "api/Department/active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Organization_API.Controllers.DepartmentController",
+    "Method": "GetAll",
+    "RelativePath": "api/Department/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Organization_API.Controllers.DepartmentController",
+    "Method": "GetById",
+    "RelativePath": "api/Department/getById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Organization_API.Controllers.DepartmentController",
+    "Method": "Reactivate",
+    "RelativePath": "api/Department/reactive/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.ExecutiveWindowController",
+    "Method": "Create",
+    "RelativePath": "api/ExecutiveWindow",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createExecutiveWindowCommand",
+        "Type": "TQMS_Admin_Application.Features.ExecutiveWindow.Command.CreateExecutiveWindow.CreateExecutiveWindowCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.ExecutiveWindowController",
+    "Method": "Update",
+    "RelativePath": "api/ExecutiveWindow/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "TQMS_Admin_Application.Features.ExecutiveWindow.Command.UpdateExecutiveWindow.UpdateExecutiveWindowCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.ExecutiveWindowController",
+    "Method": "Delete",
+    "RelativePath": "api/ExecutiveWindow/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.ExecutiveWindowController",
+    "Method": "GetAllActive",
+    "RelativePath": "api/ExecutiveWindow/active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.ExecutiveWindowController",
+    "Method": "GetAll",
+    "RelativePath": "api/ExecutiveWindow/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.ExecutiveWindowController",
+    "Method": "GetById",
+    "RelativePath": "api/ExecutiveWindow/getById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.ExecutiveWindowController",
+    "Method": "Reactivate",
+    "RelativePath": "api/ExecutiveWindow/reactive/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.ExecutiveWindowCategoryController",
+    "Method": "Create",
+    "RelativePath": "api/ExecutiveWindowCategory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createExecutiveWindowCategoryCommand",
+        "Type": "TQMS_Admin_Application.Features.ExecutiveWindowCategoryCategory.Command.CreateExecutiveWindowCategoryCategory.CreateExecutiveWindowCategoryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.ExecutiveWindowCategoryController",
+    "Method": "Update",
+    "RelativePath": "api/ExecutiveWindowCategory/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "TQMS_Admin_Application.Features.ExecutiveWindowCategoryCategory.Command.UpdateExecutiveWindowCategoryCategory.UpdateExecutiveWindowCategoryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.ExecutiveWindowCategoryController",
+    "Method": "Delete",
+    "RelativePath": "api/ExecutiveWindowCategory/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.ExecutiveWindowCategoryController",
+    "Method": "GetAllActive",
+    "RelativePath": "api/ExecutiveWindowCategory/active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.ExecutiveWindowCategoryController",
+    "Method": "GetAll",
+    "RelativePath": "api/ExecutiveWindowCategory/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.ExecutiveWindowCategoryController",
+    "Method": "GetById",
+    "RelativePath": "api/ExecutiveWindowCategory/getById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.ExecutiveWindowCategoryController",
+    "Method": "Reactivate",
+    "RelativePath": "api/ExecutiveWindowCategory/reactive/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelCategoryController",
+    "Method": "Create",
+    "RelativePath": "api/LevelCategory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createLevelCategoryCommand",
+        "Type": "TQMS_Admin_Application.Features.LevelCategory.Command.CreateLevelCategory.CreateLevelCategoryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelCategoryController",
+    "Method": "Update",
+    "RelativePath": "api/LevelCategory/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "TQMS_Admin_Application.Features.LevelCategory.Command.UpdateLevelCategory.UpdateLevelCategoryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelCategoryController",
+    "Method": "Delete",
+    "RelativePath": "api/LevelCategory/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelCategoryController",
+    "Method": "GetAllActive",
+    "RelativePath": "api/LevelCategory/active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelCategoryController",
+    "Method": "GetAll",
+    "RelativePath": "api/LevelCategory/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelCategoryController",
+    "Method": "GetById",
+    "RelativePath": "api/LevelCategory/getById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelCategoryController",
+    "Method": "Reactivate",
+    "RelativePath": "api/LevelCategory/reactive/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelHierarchyController",
+    "Method": "Create",
+    "RelativePath": "api/LevelHierarchy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createLevelHierarchyCommand",
+        "Type": "TQMS_Admin_Application.Features.LevelHierarchy.Command.CreateLevelHierarchy.CreateLevelHierarchyCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelHierarchyController",
+    "Method": "Update",
+    "RelativePath": "api/LevelHierarchy/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "TQMS_Admin_Application.Features.LevelHierarchy.Command.UpdateLevelHierarchy.UpdateLevelHierarchyCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelHierarchyController",
+    "Method": "Delete",
+    "RelativePath": "api/LevelHierarchy/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelHierarchyController",
+    "Method": "GetAllActive",
+    "RelativePath": "api/LevelHierarchy/active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelHierarchyController",
+    "Method": "GetAll",
+    "RelativePath": "api/LevelHierarchy/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelHierarchyController",
+    "Method": "GetById",
+    "RelativePath": "api/LevelHierarchy/getById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelHierarchyController",
+    "Method": "Reactivate",
+    "RelativePath": "api/LevelHierarchy/reactive/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelsController",
+    "Method": "Create",
+    "RelativePath": "api/Levels",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createLevelsCommand",
+        "Type": "TQMS_Admin_Application.Features.Levels.Commands.CreateLevels.CreateLevelsCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelsController",
+    "Method": "Update",
+    "RelativePath": "api/Levels/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "TQMS_Admin_Application.Features.Levels.Commands.Updatelevels.UpdateLevelsCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelsController",
+    "Method": "Delete",
+    "RelativePath": "api/Levels/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelsController",
+    "Method": "GetAllActive",
+    "RelativePath": "api/Levels/active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Levels/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelsController",
+    "Method": "GetById",
+    "RelativePath": "api/Levels/getById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.LevelsController",
+    "Method": "Reactivate",
+    "RelativePath": "api/Levels/reactive/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Organization_API.Controllers.OrganizationController",
+    "Method": "Create",
+    "RelativePath": "api/Organization",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createOrganizationCommand",
+        "Type": "TQMS_Organization_Application.Features.Organization.Commands.CreateOrganization.CreateOrganizationCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Organization_API.Controllers.OrganizationController",
+    "Method": "Update",
+    "RelativePath": "api/Organization/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "TQMS_Organization_Application.Features.Organization.Commands.UpdateOrganization.UpdateOrganizationCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Organization_API.Controllers.OrganizationController",
+    "Method": "Delete",
+    "RelativePath": "api/Organization/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Organization_API.Controllers.OrganizationController",
+    "Method": "GetAllActive",
+    "RelativePath": "api/Organization/active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Organization_API.Controllers.OrganizationController",
+    "Method": "GetAll",
+    "RelativePath": "api/Organization/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Organization_API.Controllers.OrganizationController",
+    "Method": "GetById",
+    "RelativePath": "api/Organization/getById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Organization_API.Controllers.OrganizationController",
+    "Method": "Reactivate",
+    "RelativePath": "api/Organization/reactive/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrganizationType_API.Controllers.OrganizationTypeController",
+    "Method": "Create",
+    "RelativePath": "api/OrganizationType",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createOrganizationTypeCommand",
+        "Type": "TQMS_Organization_Application.Features.OrganizationType.Commands.CreateOrganizationTYpe.CreateOrganizationTypeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrganizationType_API.Controllers.OrganizationTypeController",
+    "Method": "Update",
+    "RelativePath": "api/OrganizationType/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "TQMS_Organization_Application.Features.OrganizationType.Commands.UpdateOrganizationType.UpdateOrganizationTypeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrganizationType_API.Controllers.OrganizationTypeController",
+    "Method": "Delete",
+    "RelativePath": "api/OrganizationType/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrganizationType_API.Controllers.OrganizationTypeController",
+    "Method": "GetAllActive",
+    "RelativePath": "api/OrganizationType/active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrganizationType_API.Controllers.OrganizationTypeController",
+    "Method": "GetAll",
+    "RelativePath": "api/OrganizationType/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrganizationType_API.Controllers.OrganizationTypeController",
+    "Method": "GetById",
+    "RelativePath": "api/OrganizationType/getById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrganizationType_API.Controllers.OrganizationTypeController",
+    "Method": "Reactivate",
+    "RelativePath": "api/OrganizationType/reactive/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.StatusTypeController",
+    "Method": "Create",
+    "RelativePath": "api/StatusType",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createStatusTypeCommand",
+        "Type": "TQMS_Admin_Application.Features.StatusType.Command.CreateStatusType.CreateStatusTypeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.StatusTypeController",
+    "Method": "Update",
+    "RelativePath": "api/StatusType/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "TQMS_Admin_Application.Features.StatusType.Command.UpdateStatusType.UpdateStatusTypeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.StatusTypeController",
+    "Method": "Delete",
+    "RelativePath": "api/StatusType/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.StatusTypeController",
+    "Method": "GetAllActive",
+    "RelativePath": "api/StatusType/active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.StatusTypeController",
+    "Method": "GetAll",
+    "RelativePath": "api/StatusType/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.StatusTypeController",
+    "Method": "GetById",
+    "RelativePath": "api/StatusType/getById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TQMS_Admin_API.Controllers.StatusTypeController",
+    "Method": "Reactivate",
+    "RelativePath": "api/StatusType/reactive/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

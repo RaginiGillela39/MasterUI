@@ -1,0 +1,15 @@
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\bin\Debug\net8.0\TQMS_Admin_Application.deps.json
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\bin\Debug\net8.0\TQMS_Admin_Application.dll
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\bin\Debug\net8.0\TQMS_Admin_Application.pdb
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\bin\Debug\net8.0\TQMS_Admin_Domain.dll
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\bin\Debug\net8.0\TQMS_Admin_Domain.pdb
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\obj\Debug\net8.0\TQMS_Admin_Application.csproj.AssemblyReference.cache
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\obj\Debug\net8.0\TQMS_Admin_Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\obj\Debug\net8.0\TQMS_Admin_Application.AssemblyInfoInputs.cache
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\obj\Debug\net8.0\TQMS_Admin_Application.AssemblyInfo.cs
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\obj\Debug\net8.0\TQMS_Admin_Application.csproj.CoreCompileInputs.cache
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\obj\Debug\net8.0\TQMS_Adm.E405129B.Up2Date
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\obj\Debug\net8.0\TQMS_Admin_Application.dll
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\obj\Debug\net8.0\refint\TQMS_Admin_Application.dll
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\obj\Debug\net8.0\TQMS_Admin_Application.pdb
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\obj\Debug\net8.0\ref\TQMS_Admin_Application.dll

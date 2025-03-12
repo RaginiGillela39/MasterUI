@@ -1,0 +1,17 @@
+D:\POC_TQMS_V1\TQMS_V1\Organization_Infrastructure\bin\Debug\net8.0\TQMS_Organization_Infrastructure.deps.json
+D:\POC_TQMS_V1\TQMS_V1\Organization_Infrastructure\bin\Debug\net8.0\TQMS_Organization_Infrastructure.runtimeconfig.json
+D:\POC_TQMS_V1\TQMS_V1\Organization_Infrastructure\bin\Debug\net8.0\TQMS_Organization_Infrastructure.dll
+D:\POC_TQMS_V1\TQMS_V1\Organization_Infrastructure\bin\Debug\net8.0\TQMS_Organization_Infrastructure.pdb
+D:\POC_TQMS_V1\TQMS_V1\Organization_Infrastructure\bin\Debug\net8.0\TQMS_Organization_Domain.dll
+D:\POC_TQMS_V1\TQMS_V1\Organization_Infrastructure\bin\Debug\net8.0\TQMS_Organization_Domain.pdb
+D:\POC_TQMS_V1\TQMS_V1\Organization_Infrastructure\obj\Debug\net8.0\TQMS_Organization_Infrastructure.csproj.AssemblyReference.cache
+D:\POC_TQMS_V1\TQMS_V1\Organization_Infrastructure\obj\Debug\net8.0\TQMS_Organization_Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\POC_TQMS_V1\TQMS_V1\Organization_Infrastructure\obj\Debug\net8.0\TQMS_Organization_Infrastructure.AssemblyInfoInputs.cache
+D:\POC_TQMS_V1\TQMS_V1\Organization_Infrastructure\obj\Debug\net8.0\TQMS_Organization_Infrastructure.AssemblyInfo.cs
+D:\POC_TQMS_V1\TQMS_V1\Organization_Infrastructure\obj\Debug\net8.0\TQMS_Organization_Infrastructure.csproj.CoreCompileInputs.cache
+D:\POC_TQMS_V1\TQMS_V1\Organization_Infrastructure\obj\Debug\net8.0\TQMS_Org.6619239E.Up2Date
+D:\POC_TQMS_V1\TQMS_V1\Organization_Infrastructure\obj\Debug\net8.0\TQMS_Organization_Infrastructure.dll
+D:\POC_TQMS_V1\TQMS_V1\Organization_Infrastructure\obj\Debug\net8.0\refint\TQMS_Organization_Infrastructure.dll
+D:\POC_TQMS_V1\TQMS_V1\Organization_Infrastructure\obj\Debug\net8.0\TQMS_Organization_Infrastructure.pdb
+D:\POC_TQMS_V1\TQMS_V1\Organization_Infrastructure\obj\Debug\net8.0\TQMS_Organization_Infrastructure.genruntimeconfig.cache
+D:\POC_TQMS_V1\TQMS_V1\Organization_Infrastructure\obj\Debug\net8.0\ref\TQMS_Organization_Infrastructure.dll

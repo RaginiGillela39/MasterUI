@@ -1,0 +1,11 @@
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\bin\Debug\net8.0\Organization_Application.deps.json
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\bin\Debug\net8.0\Organization_Application.dll
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\bin\Debug\net8.0\Organization_Application.pdb
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\obj\Debug\net8.0\Organization_Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\obj\Debug\net8.0\Organization_Application.AssemblyInfoInputs.cache
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\obj\Debug\net8.0\Organization_Application.AssemblyInfo.cs
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\obj\Debug\net8.0\Organization_Application.csproj.CoreCompileInputs.cache
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\obj\Debug\net8.0\Organization_Application.dll
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\obj\Debug\net8.0\refint\Organization_Application.dll
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\obj\Debug\net8.0\Organization_Application.pdb
+D:\POC_TQMS_V1\TQMS_V1\Organization_Application\obj\Debug\net8.0\ref\Organization_Application.dll
