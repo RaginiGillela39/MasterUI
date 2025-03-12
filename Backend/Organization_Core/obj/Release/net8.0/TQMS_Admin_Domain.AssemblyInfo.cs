@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TQMS_Admin_Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37ae133a260c8553ec2ef740f239d5eb207fcfb0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TQMS_Admin_Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TQMS_Admin_Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
