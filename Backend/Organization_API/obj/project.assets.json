@@ -5937,11 +5937,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\POC_TQMS_V1\\TQMS_V1\\Organization_API\\TQMS_Admin_API.csproj",
+      "projectUniqueName": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_API\\TQMS_Admin_API.csproj",
       "projectName": "TQMS_Admin_API",
-      "projectPath": "D:\\POC_TQMS_V1\\TQMS_V1\\Organization_API\\TQMS_Admin_API.csproj",
+      "projectPath": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_API\\TQMS_Admin_API.csproj",
       "packagesPath": "C:\\Users\\rgillela\\.nuget\\packages\\",
-      "outputPath": "D:\\POC_TQMS_V1\\TQMS_V1\\Organization_API\\obj\\",
+      "outputPath": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5963,14 +5963,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\POC_TQMS_V1\\TQMS_V1\\Organization_Application\\TQMS_Admin_Application.csproj": {
-              "projectPath": "D:\\POC_TQMS_V1\\TQMS_V1\\Organization_Application\\TQMS_Admin_Application.csproj"
+            "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_Application\\TQMS_Admin_Application.csproj": {
+              "projectPath": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_Application\\TQMS_Admin_Application.csproj"
             },
-            "D:\\POC_TQMS_V1\\TQMS_V1\\Organization_Infrastructure\\TQMS_Admin_Infrastructure.csproj": {
-              "projectPath": "D:\\POC_TQMS_V1\\TQMS_V1\\Organization_Infrastructure\\TQMS_Admin_Infrastructure.csproj"
+            "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_Infrastructure\\TQMS_Admin_Infrastructure.csproj": {
+              "projectPath": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_Infrastructure\\TQMS_Admin_Infrastructure.csproj"
             },
-            "D:\\POC_TQMS_V1\\TQMS_V1\\TQMS_Organization_Persistence\\TQMS_Admin_Persistence.csproj": {
-              "projectPath": "D:\\POC_TQMS_V1\\TQMS_V1\\TQMS_Organization_Persistence\\TQMS_Admin_Persistence.csproj"
+            "D:\\POC_TQMS_V1\\TQMS\\Backend\\TQMS_Organization_Persistence\\TQMS_Admin_Persistence.csproj": {
+              "projectPath": "D:\\POC_TQMS_V1\\TQMS\\Backend\\TQMS_Organization_Persistence\\TQMS_Admin_Persistence.csproj"
             }
           }
         }

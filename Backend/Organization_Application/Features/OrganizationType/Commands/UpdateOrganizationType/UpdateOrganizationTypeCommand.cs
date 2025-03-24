@@ -18,12 +18,13 @@ namespace TQMS_Organization_Application.Features.OrganizationType.Commands.Updat
             var orgType = await _organizationType.GetByIdOrganizationTypeAsync(request.Id)
                 ?? throw new NotFoundException(nameof(OrganizationType), request.Id);
 
-            var orgTypeData = new Organization_Domain.Entities.OrganizationType() 
+            var orgTypeData = new Organization_Domain.Entities.OrganizationType()
             {
                 Id = request.Id,
                 Name = request.Name,
                 ModifiedBy = "system",
-                ModifiedDate = DateTime.Now 
+                ModifiedDate = DateTime.Now,
+                IsActive = true
             };
 
              _organizationTypevalidator.ValidateEntity(orgTypeData);

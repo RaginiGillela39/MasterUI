@@ -1,0 +1,8 @@
+[2025-03-12 12:56:40.013 +05:30  INF]  Now listening on: http://localhost:5000
+[2025-03-12 12:56:40.044 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2025-03-12 12:56:40.044 +05:30  INF]  Hosting environment: Production
+[2025-03-12 12:56:40.044 +05:30  INF]  Content root path: D:\POC_TQMS_V1\TQMS\Backend\Organization_API\bin\Debug\net8.0
+[2025-03-12 12:57:51.402 +05:30  INF]  Now listening on: http://localhost:5000
+[2025-03-12 12:57:51.435 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2025-03-12 12:57:51.435 +05:30  INF]  Hosting environment: Production
+[2025-03-12 12:57:51.435 +05:30  INF]  Content root path: D:\POC_TQMS_V1\TQMS\Backend\Organization_API\bin\Debug\net8.0

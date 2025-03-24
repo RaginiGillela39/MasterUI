@@ -1,8 +1,3 @@
-
-
-using Microsoft.Extensions.Configuration;
-
-
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 
@@ -17,6 +12,12 @@ builder.Services.AddControllers();
 //Add Dbcontext 
 builder.Services.ApplicationPersisitenceRegistration(builder.Configuration);
 builder.Services.AddApplicationRegistration();
+
+//Add CORS
+builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
+{
+    builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+}));
 
 //AddSerilog..
 // Add services to the container.
@@ -37,6 +38,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+//Middleware for  Cors
+app.UseCors("corsapp");
 
 //controller middleware
 app.MapControllers();

@@ -12,7 +12,8 @@ namespace TQMS_Organization_Persistence.Repositories
 
         public async Task DeleteOrganizationTypeAsync(OrganizationType OrganizationType)
         {
-            await DeleteByIdAsync(OrganizationType.Id);
+            //await DeleteByIdAsync(OrganizationType.Id);
+            DeleteAsync(OrganizationType);
             await SaveChanges();
         }
 

@@ -24,6 +24,13 @@
             }
         }
 
+        public void DeleteAsync(TEnity entity)
+        {
+            if(entity != null)
+            {
+                _context.Set<TEnity>().Update(entity);
+            }
+        }
         public async Task<IEnumerable<TEnity>> GetAllAsync()
         {
             return await _context.Set<TEnity>().ToListAsync();

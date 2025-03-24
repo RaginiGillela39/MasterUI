@@ -1,18 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\POC_TQMS_V1\\TQMS_V1\\",
+  "WorkspaceRootPath": "D:\\POC_TQMS_V1\\TQMS\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2DE54B7E-DA39-4923-8DFC-F849E5AC652D}|TQMS_Organization_Persistence\\TQMS_Admin_Persistence.csproj|d:\\poc_tqms_v1\\tqms_v1\\tqms_organization_persistence\\repositories\\base\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9FECE261-F481-46B0-A0A9-A1AF80F4560B}|Organization_Application\\TQMS_Admin_Application.csproj|d:\\poc_tqms_v1\\tqms\\backend\\organization_application\\features\\organizationtype\\queries\\getallquery\\getallorganizationtypequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FECE261-F481-46B0-A0A9-A1AF80F4560B}|Organization_Application\\TQMS_Admin_Application.csproj|solutionrelative:organization_application\\features\\organizationtype\\queries\\getallquery\\getallorganizationtypequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17E9AEAA-1083-47B9-AF50-00CA02F6C70E}|Organization_API\\TQMS_Admin_API.csproj|d:\\poc_tqms_v1\\tqms\\backend\\organization_api\\controllers\\organizationtypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17E9AEAA-1083-47B9-AF50-00CA02F6C70E}|Organization_API\\TQMS_Admin_API.csproj|solutionrelative:organization_api\\controllers\\organizationtypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE54B7E-DA39-4923-8DFC-F849E5AC652D}|TQMS_Organization_Persistence\\TQMS_Admin_Persistence.csproj|d:\\poc_tqms_v1\\tqms\\backend\\tqms_organization_persistence\\repositories\\organizationtyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DE54B7E-DA39-4923-8DFC-F849E5AC652D}|TQMS_Organization_Persistence\\TQMS_Admin_Persistence.csproj|solutionrelative:tqms_organization_persistence\\repositories\\organizationtyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE54B7E-DA39-4923-8DFC-F849E5AC652D}|TQMS_Organization_Persistence\\TQMS_Admin_Persistence.csproj|d:\\poc_tqms_v1\\tqms\\backend\\tqms_organization_persistence\\repositories\\base\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2DE54B7E-DA39-4923-8DFC-F849E5AC652D}|TQMS_Organization_Persistence\\TQMS_Admin_Persistence.csproj|solutionrelative:tqms_organization_persistence\\repositories\\base\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DE54B7E-DA39-4923-8DFC-F849E5AC652D}|TQMS_Organization_Persistence\\TQMS_Admin_Persistence.csproj|d:\\poc_tqms_v1\\tqms_v1\\tqms_organization_persistence\\applicationpersistenceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2DE54B7E-DA39-4923-8DFC-F849E5AC652D}|TQMS_Organization_Persistence\\TQMS_Admin_Persistence.csproj|d:\\poc_tqms_v1\\tqms\\backend\\tqms_organization_persistence\\applicationpersistenceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2DE54B7E-DA39-4923-8DFC-F849E5AC652D}|TQMS_Organization_Persistence\\TQMS_Admin_Persistence.csproj|solutionrelative:tqms_organization_persistence\\applicationpersistenceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17E9AEAA-1083-47B9-AF50-00CA02F6C70E}|Organization_API\\TQMS_Admin_API.csproj|d:\\poc_tqms_v1\\tqms_v1\\organization_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E7ACE81-BA4D-47FA-AB45-78D1D41E6099}|Organization_Infrastructure\\TQMS_Admin_Infrastructure.csproj|d:\\poc_tqms_v1\\tqms\\backend\\organization_infrastructure\\data\\organizationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E7ACE81-BA4D-47FA-AB45-78D1D41E6099}|Organization_Infrastructure\\TQMS_Admin_Infrastructure.csproj|solutionrelative:organization_infrastructure\\data\\organizationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17E9AEAA-1083-47B9-AF50-00CA02F6C70E}|Organization_API\\TQMS_Admin_API.csproj|d:\\poc_tqms_v1\\tqms\\backend\\organization_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17E9AEAA-1083-47B9-AF50-00CA02F6C70E}|Organization_API\\TQMS_Admin_API.csproj|solutionrelative:organization_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FECE261-F481-46B0-A0A9-A1AF80F4560B}|Organization_Application\\TQMS_Admin_Application.csproj|d:\\poc_tqms_v1\\tqms\\backend\\organization_application\\features\\organizationtype\\commands\\deleteorganizationtype\\deleteorganizationtypecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FECE261-F481-46B0-A0A9-A1AF80F4560B}|Organization_Application\\TQMS_Admin_Application.csproj|solutionrelative:organization_application\\features\\organizationtype\\commands\\deleteorganizationtype\\deleteorganizationtypecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FECE261-F481-46B0-A0A9-A1AF80F4560B}|Organization_Application\\TQMS_Admin_Application.csproj|d:\\poc_tqms_v1\\tqms\\backend\\organization_application\\features\\organizationtype\\commands\\updateorganizationtype\\updateorganizationtypecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FECE261-F481-46B0-A0A9-A1AF80F4560B}|Organization_Application\\TQMS_Admin_Application.csproj|solutionrelative:organization_application\\features\\organizationtype\\commands\\updateorganizationtype\\updateorganizationtypecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,42 +62,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApplicationPersistenceRegistration.cs",
-              "DocumentMoniker": "D:\\POC_TQMS_V1\\TQMS_V1\\TQMS_Organization_Persistence\\ApplicationPersistenceRegistration.cs",
-              "RelativeDocumentMoniker": "TQMS_Organization_Persistence\\ApplicationPersistenceRegistration.cs",
-              "ToolTip": "D:\\POC_TQMS_V1\\TQMS_V1\\TQMS_Organization_Persistence\\ApplicationPersistenceRegistration.cs",
-              "RelativeToolTip": "TQMS_Organization_Persistence\\ApplicationPersistenceRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACoAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "OrganizationDBContext.cs",
+              "DocumentMoniker": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_Infrastructure\\Data\\OrganizationDBContext.cs",
+              "RelativeDocumentMoniker": "Organization_Infrastructure\\Data\\OrganizationDBContext.cs",
+              "ToolTip": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_Infrastructure\\Data\\OrganizationDBContext.cs",
+              "RelativeToolTip": "Organization_Infrastructure\\Data\\OrganizationDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T10:18:44.277Z",
+              "WhenOpened": "2025-03-21T04:53:41.322Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "BaseRepository.cs",
-              "DocumentMoniker": "D:\\POC_TQMS_V1\\TQMS_V1\\TQMS_Organization_Persistence\\Repositories\\Base\\BaseRepository.cs",
+              "DocumentMoniker": "D:\\POC_TQMS_V1\\TQMS\\Backend\\TQMS_Organization_Persistence\\Repositories\\Base\\BaseRepository.cs",
               "RelativeDocumentMoniker": "TQMS_Organization_Persistence\\Repositories\\Base\\BaseRepository.cs",
-              "ToolTip": "D:\\POC_TQMS_V1\\TQMS_V1\\TQMS_Organization_Persistence\\Repositories\\Base\\BaseRepository.cs",
+              "ToolTip": "D:\\POC_TQMS_V1\\TQMS\\Backend\\TQMS_Organization_Persistence\\Repositories\\Base\\BaseRepository.cs",
               "RelativeToolTip": "TQMS_Organization_Persistence\\Repositories\\Base\\BaseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAMwD8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T09:59:42.7Z",
+              "WhenOpened": "2025-03-20T11:10:37.965Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "OrganizationTypeRepository.cs",
+              "DocumentMoniker": "D:\\POC_TQMS_V1\\TQMS\\Backend\\TQMS_Organization_Persistence\\Repositories\\OrganizationTypeRepository.cs",
+              "RelativeDocumentMoniker": "TQMS_Organization_Persistence\\Repositories\\OrganizationTypeRepository.cs",
+              "ToolTip": "D:\\POC_TQMS_V1\\TQMS\\Backend\\TQMS_Organization_Persistence\\Repositories\\OrganizationTypeRepository.cs",
+              "RelativeToolTip": "TQMS_Organization_Persistence\\Repositories\\OrganizationTypeRepository.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAIA0wB8AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T10:26:16.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetAllOrganizationTypeQuery.cs",
+              "DocumentMoniker": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_Application\\Features\\OrganizationType\\Queries\\GetAllQuery\\GetAllOrganizationTypeQuery.cs",
+              "RelativeDocumentMoniker": "Organization_Application\\Features\\OrganizationType\\Queries\\GetAllQuery\\GetAllOrganizationTypeQuery.cs",
+              "ToolTip": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_Application\\Features\\OrganizationType\\Queries\\GetAllQuery\\GetAllOrganizationTypeQuery.cs",
+              "RelativeToolTip": "Organization_Application\\Features\\OrganizationType\\Queries\\GetAllQuery\\GetAllOrganizationTypeQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T10:37:00.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrganizationTypeController.cs",
+              "DocumentMoniker": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_API\\Controllers\\OrganizationTypeController.cs",
+              "RelativeDocumentMoniker": "Organization_API\\Controllers\\OrganizationTypeController.cs",
+              "ToolTip": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_API\\Controllers\\OrganizationTypeController.cs",
+              "RelativeToolTip": "Organization_API\\Controllers\\OrganizationTypeController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAEwDAAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T08:35:39.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationPersistenceRegistration.cs",
+              "DocumentMoniker": "D:\\POC_TQMS_V1\\TQMS\\Backend\\TQMS_Organization_Persistence\\ApplicationPersistenceRegistration.cs",
+              "RelativeDocumentMoniker": "TQMS_Organization_Persistence\\ApplicationPersistenceRegistration.cs",
+              "ToolTip": "D:\\POC_TQMS_V1\\TQMS\\Backend\\TQMS_Organization_Persistence\\ApplicationPersistenceRegistration.cs",
+              "RelativeToolTip": "TQMS_Organization_Persistence\\ApplicationPersistenceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T04:53:52.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DeleteOrganizationTypeCommand.cs",
+              "DocumentMoniker": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_Application\\Features\\OrganizationType\\Commands\\DeleteOrganizationType\\DeleteOrganizationTypeCommand.cs",
+              "RelativeDocumentMoniker": "Organization_Application\\Features\\OrganizationType\\Commands\\DeleteOrganizationType\\DeleteOrganizationTypeCommand.cs",
+              "ToolTip": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_Application\\Features\\OrganizationType\\Commands\\DeleteOrganizationType\\DeleteOrganizationTypeCommand.cs",
+              "RelativeToolTip": "Organization_Application\\Features\\OrganizationType\\Commands\\DeleteOrganizationType\\DeleteOrganizationTypeCommand.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T10:26:16.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\POC_TQMS_V1\\TQMS_V1\\Organization_API\\Program.cs",
+              "DocumentMoniker": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_API\\Program.cs",
               "RelativeDocumentMoniker": "Organization_API\\Program.cs",
-              "ToolTip": "D:\\POC_TQMS_V1\\TQMS_V1\\Organization_API\\Program.cs",
+              "ToolTip": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_API\\Program.cs",
               "RelativeToolTip": "Organization_API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T09:56:56.286Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UpdateOrganizationTypeCommand.cs",
+              "DocumentMoniker": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_Application\\Features\\OrganizationType\\Commands\\UpdateOrganizationType\\UpdateOrganizationTypeCommand.cs",
+              "RelativeDocumentMoniker": "Organization_Application\\Features\\OrganizationType\\Commands\\UpdateOrganizationType\\UpdateOrganizationTypeCommand.cs",
+              "ToolTip": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_Application\\Features\\OrganizationType\\Commands\\UpdateOrganizationType\\UpdateOrganizationTypeCommand.cs",
+              "RelativeToolTip": "Organization_Application\\Features\\OrganizationType\\Commands\\UpdateOrganizationType\\UpdateOrganizationTypeCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T10:25:57.365Z"
             }
           ]
         },

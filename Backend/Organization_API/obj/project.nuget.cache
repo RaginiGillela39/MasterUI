@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zed4XeqM0Sk=",
+  "dgSpecHash": "g++UJfRrar4=",
   "success": true,
-  "projectFilePath": "D:\\POC_TQMS_V1\\TQMS_V1\\Organization_API\\TQMS_Admin_API.csproj",
+  "projectFilePath": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_API\\TQMS_Admin_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rgillela\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\rgillela\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

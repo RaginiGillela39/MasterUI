@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "td+CSUXPKSQ=",
+  "dgSpecHash": "hUsM4kt6HBs=",
   "success": true,
-  "projectFilePath": "D:\\POC_TQMS_V1\\TQMS_V1\\Organization_Infrastructure\\TQMS_Admin_Infrastructure.csproj",
+  "projectFilePath": "D:\\POC_TQMS_V1\\TQMS\\Backend\\Organization_Infrastructure\\TQMS_Admin_Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rgillela\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\rgillela\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

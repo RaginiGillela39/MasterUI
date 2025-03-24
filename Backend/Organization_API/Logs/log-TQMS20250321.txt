@@ -1,0 +1,1087 @@
+[2025-03-21 14:07:44.295 +05:30  INF]  Now listening on: https://localhost:7237
+[2025-03-21 14:07:44.325 +05:30  INF]  Now listening on: http://localhost:5226
+[2025-03-21 14:07:44.403 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2025-03-21 14:07:44.404 +05:30  INF]  Hosting environment: Development
+[2025-03-21 14:07:44.404 +05:30  INF]  Content root path: D:\POC_TQMS_V1\TQMS\Backend\Organization_API
+[2025-03-21 14:07:46.813 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/swagger - null null
+[2025-03-21 14:07:47.132 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/swagger - 301 0 null 336.3777ms
+[2025-03-21 14:07:47.138 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/swagger/index.html - null null
+[2025-03-21 14:07:47.207 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/swagger/index.html - 200 null text/html;charset=utf-8 69.181ms
+[2025-03-21 14:07:47.214 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/swagger/swagger-ui.css - null null
+[2025-03-21 14:07:47.214 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/swagger/swagger-ui-standalone-preset.js - null null
+[2025-03-21 14:07:47.214 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/swagger/swagger-ui-bundle.js - null null
+[2025-03-21 14:07:47.215 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/_vs/browserLink - null null
+[2025-03-21 14:07:47.215 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/_framework/aspnetcore-browser-refresh.js - null null
+[2025-03-21 14:07:47.273 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 57.3266ms
+[2025-03-21 14:07:47.334 +05:30  INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[2025-03-21 14:07:47.334 +05:30  INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+[2025-03-21 14:07:47.340 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 125.2172ms
+[2025-03-21 14:07:47.340 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/swagger/swagger-ui.css - 200 143943 text/css 125.4217ms
+[2025-03-21 14:07:47.342 +05:30  INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+[2025-03-21 14:07:47.342 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 128.1638ms
+[2025-03-21 14:07:47.368 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/_vs/browserLink - 200 null text/javascript; charset=UTF-8 153.1838ms
+[2025-03-21 14:07:47.479 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/swagger/v1/swagger.json - null null
+[2025-03-21 14:07:47.501 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/swagger/favicon-32x32.png - null null
+[2025-03-21 14:07:47.502 +05:30  INF]  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+[2025-03-21 14:07:47.502 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/swagger/favicon-32x32.png - 200 628 image/png 1.6526ms
+[2025-03-21 14:07:47.586 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.4417ms
+[2025-03-21 14:08:40.761 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:08:40.786 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:08:40.792 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:08:40.838 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:08:41.978 +05:30  WRN]  No instantiatable types implementing `IEntityTypeConfiguration` were found while while scanning assembly 'TQMS_Admin_Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+[2025-03-21 14:08:46.922 +05:30  INF]  Executed DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:08:47.074 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:08:47.109 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 6263.6666ms
+[2025-03-21 14:08:47.110 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:08:47.123 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 6362.5039ms
+[2025-03-21 14:11:40.465 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:11:40.488 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:11:40.488 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:11:40.489 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:11:40.636 +05:30  INF]  Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:11:40.638 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:11:40.640 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 150.5846ms
+[2025-03-21 14:11:40.640 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:11:40.641 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 175.6942ms
+[2025-03-21 14:11:46.140 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:11:46.142 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:11:46.142 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:11:46.142 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:11:46.191 +05:30  INF]  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:11:46.196 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:11:46.197 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 54.8568ms
+[2025-03-21 14:11:46.197 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:11:46.198 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 58.5356ms
+[2025-03-21 14:12:03.994 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:12:03.996 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:12:03.996 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:12:03.996 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:12:04.006 +05:30  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:12:04.008 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:12:04.008 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 11.7419ms
+[2025-03-21 14:12:04.009 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:12:04.009 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 15.8426ms
+[2025-03-21 14:12:06.685 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:12:06.685 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:12:06.686 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:12:06.686 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:12:06.702 +05:30  INF]  Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:12:06.714 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:12:06.715 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 29.1292ms
+[2025-03-21 14:12:06.719 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:12:06.720 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 35.4007ms
+[2025-03-21 14:12:13.380 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:12:13.381 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:12:13.381 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:12:13.381 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:12:13.393 +05:30  INF]  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:12:13.398 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:12:13.398 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 16.9874ms
+[2025-03-21 14:12:13.399 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:12:13.399 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 19.9127ms
+[2025-03-21 14:12:19.274 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:12:19.275 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:12:19.275 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:12:19.275 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:12:19.280 +05:30  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:12:19.285 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:12:19.286 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 10.2933ms
+[2025-03-21 14:12:19.286 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:12:19.287 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 12.2942ms
+[2025-03-21 14:31:15.479 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:31:15.481 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:31:15.481 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:31:15.481 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:31:19.891 +05:30  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:31:19.893 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:31:19.893 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 4411.8525ms
+[2025-03-21 14:31:19.893 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:31:19.894 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 4415.8121ms
+[2025-03-21 14:32:26.002 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:32:26.008 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:32:26.008 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:32:26.013 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:32:26.030 +05:30  INF]  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:32:26.055 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:32:26.056 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 40.4129ms
+[2025-03-21 14:32:26.056 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:32:26.056 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 60.0911ms
+[2025-03-21 14:32:40.499 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:32:40.500 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:32:40.500 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:32:40.500 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:32:40.504 +05:30  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:32:40.509 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:32:40.510 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 10.18ms
+[2025-03-21 14:32:40.510 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:32:40.511 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 12.9753ms
+[2025-03-21 14:33:39.715 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:33:39.723 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:33:39.723 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:33:39.724 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:33:39.742 +05:30  INF]  Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:33:39.743 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:33:39.744 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 15.6693ms
+[2025-03-21 14:33:39.744 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:33:39.744 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 29.7311ms
+[2025-03-21 14:33:46.555 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:33:46.555 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:33:46.556 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:33:46.556 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:33:46.564 +05:30  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:33:46.565 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:33:46.566 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 9.4508ms
+[2025-03-21 14:33:46.566 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:33:46.567 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 11.9148ms
+[2025-03-21 14:33:51.622 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:33:51.623 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:33:51.623 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:33:51.624 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:33:51.634 +05:30  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:33:51.635 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:33:51.635 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 11.5273ms
+[2025-03-21 14:33:51.636 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:33:51.636 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 14.2009ms
+[2025-03-21 14:34:04.945 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:34:04.947 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:34:04.947 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:34:04.947 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:34:04.972 +05:30  INF]  Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:34:04.973 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:34:04.974 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 26.4115ms
+[2025-03-21 14:34:04.974 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:34:04.975 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 29.7212ms
+[2025-03-21 14:34:08.386 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:34:08.387 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:34:08.387 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:34:08.387 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:34:08.396 +05:30  INF]  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:34:08.396 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:34:08.397 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 9.3366ms
+[2025-03-21 14:34:08.397 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:34:08.398 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 13.1067ms
+[2025-03-21 14:34:15.249 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:34:15.249 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:34:15.249 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:34:15.250 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:34:15.259 +05:30  INF]  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:34:15.262 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:34:15.262 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 12.734ms
+[2025-03-21 14:34:15.263 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:34:15.263 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 14.4638ms
+[2025-03-21 14:34:19.916 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:34:19.917 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:34:19.917 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:34:19.918 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:34:19.947 +05:30  INF]  Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:34:19.948 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:34:19.949 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 30.9781ms
+[2025-03-21 14:34:19.949 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:34:19.949 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 33.8643ms
+[2025-03-21 14:34:25.922 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:34:25.923 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:34:25.923 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:34:25.923 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:34:25.933 +05:30  INF]  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:34:25.935 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:34:25.935 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 12.1016ms
+[2025-03-21 14:34:25.935 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:34:25.936 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 13.8176ms
+[2025-03-21 14:34:44.429 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:34:44.429 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:34:44.430 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:34:44.430 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:34:44.449 +05:30  INF]  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:34:44.450 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:34:44.451 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 21.2245ms
+[2025-03-21 14:34:44.451 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:34:44.451 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 22.7786ms
+[2025-03-21 14:34:47.295 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:34:47.295 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:34:47.296 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:34:47.296 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:34:47.302 +05:30  INF]  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:34:47.304 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:34:47.305 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 8.7035ms
+[2025-03-21 14:34:47.305 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:34:47.305 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 10.5649ms
+[2025-03-21 14:34:51.734 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:34:51.735 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:34:51.735 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:34:51.735 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:34:51.743 +05:30  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:34:51.746 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:34:51.746 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 10.5456ms
+[2025-03-21 14:34:51.747 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:34:51.747 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 13.5247ms
+[2025-03-21 14:35:01.934 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:35:01.935 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:35:01.935 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:35:01.935 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:35:01.940 +05:30  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:35:01.943 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:35:01.943 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 8.248ms
+[2025-03-21 14:35:01.943 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:35:01.944 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 10.3166ms
+[2025-03-21 14:35:05.817 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:35:05.818 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:35:05.818 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:35:05.818 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:35:05.826 +05:30  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:35:05.829 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:35:05.829 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 10.8764ms
+[2025-03-21 14:35:05.830 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:35:05.830 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 12.726ms
+[2025-03-21 14:35:39.348 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:35:39.352 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:35:39.352 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:35:39.353 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:35:39.362 +05:30  INF]  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:35:39.369 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:35:39.370 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 17.1631ms
+[2025-03-21 14:35:39.370 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:35:39.370 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 22.7552ms
+[2025-03-21 14:35:49.398 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:35:49.399 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:35:49.399 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:35:49.399 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:35:49.402 +05:30  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:35:49.404 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:35:49.405 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 5.9393ms
+[2025-03-21 14:35:49.405 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:35:49.405 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 7.062ms
+[2025-03-21 14:37:18.863 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:37:18.872 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:37:18.872 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:37:18.875 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:37:19.265 +05:30  INF]  Executed DbCommand (356ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:37:19.269 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:37:19.272 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 396.5597ms
+[2025-03-21 14:37:19.272 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:37:19.274 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 411.8666ms
+[2025-03-21 14:38:43.467 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:38:43.469 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:38:43.469 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:38:43.470 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:38:43.483 +05:30  INF]  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:38:43.484 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:38:43.485 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 14.4113ms
+[2025-03-21 14:38:43.485 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:38:43.486 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 18.1072ms
+[2025-03-21 14:38:48.594 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:38:48.594 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:38:48.594 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:38:48.596 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:38:48.603 +05:30  INF]  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:38:48.607 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:38:48.607 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 11.1669ms
+[2025-03-21 14:38:48.607 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:38:48.607 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 14.1227ms
+[2025-03-21 14:48:31.075 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:48:31.080 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:48:31.080 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:48:31.081 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:48:31.441 +05:30  INF]  Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:48:31.442 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:48:31.444 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 362.2394ms
+[2025-03-21 14:48:31.444 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:48:31.445 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 371.7002ms
+[2025-03-21 14:48:39.872 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:48:39.873 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:48:39.873 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:48:39.873 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:48:39.883 +05:30  INF]  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:48:39.889 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:48:39.890 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 17.3917ms
+[2025-03-21 14:48:39.891 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:48:39.891 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 23.6339ms
+[2025-03-21 14:49:19.896 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:49:19.943 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:49:19.945 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:49:19.945 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:49:19.960 +05:30  INF]  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:49:19.962 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:49:19.964 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 18.7178ms
+[2025-03-21 14:49:19.964 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:49:19.965 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 68.5414ms
+[2025-03-21 14:50:55.279 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:50:55.285 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:50:55.322 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:50:55.322 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:50:55.369 +05:30  INF]  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:50:55.373 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:50:55.379 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 56.3959ms
+[2025-03-21 14:50:55.380 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:50:55.381 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 101.3982ms
+[2025-03-21 14:50:58.604 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:50:58.605 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:50:58.606 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:50:58.606 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:50:58.623 +05:30  INF]  Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:50:58.624 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:50:58.657 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 51.2724ms
+[2025-03-21 14:50:58.659 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:50:58.659 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 55.1194ms
+[2025-03-21 14:51:44.612 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:51:44.612 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:51:44.613 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:51:44.613 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:51:44.630 +05:30  INF]  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:51:44.633 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:51:44.634 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 20.399ms
+[2025-03-21 14:51:44.635 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:51:44.635 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 23.5383ms
+[2025-03-21 14:52:07.642 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:52:07.643 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:52:07.643 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:52:07.643 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:52:07.663 +05:30  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:52:07.667 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:52:07.668 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 24.379ms
+[2025-03-21 14:52:07.668 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:52:07.668 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 26.5896ms
+[2025-03-21 14:53:12.123 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:53:12.123 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:53:12.124 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:53:12.124 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:53:12.140 +05:30  INF]  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:53:12.144 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:53:12.148 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 24.3599ms
+[2025-03-21 14:53:12.150 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:53:12.150 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 27.392ms
+[2025-03-21 14:53:22.440 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:53:22.441 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:53:22.441 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:53:22.441 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:53:22.447 +05:30  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:53:22.454 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:53:22.455 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 14.2159ms
+[2025-03-21 14:53:22.455 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:53:22.455 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 15.9434ms
+[2025-03-21 14:53:38.179 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:53:38.180 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:53:38.180 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:53:38.180 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:53:38.184 +05:30  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:53:38.187 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:53:38.188 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 7.92ms
+[2025-03-21 14:53:38.188 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:53:38.188 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 9.3474ms
+[2025-03-21 14:53:54.030 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:53:54.033 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:53:54.033 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:53:54.033 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:53:54.051 +05:30  INF]  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:53:54.060 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:53:54.061 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 26.9791ms
+[2025-03-21 14:53:54.061 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:53:54.061 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 31.3793ms
+[2025-03-21 14:55:02.194 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:55:02.195 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:55:02.195 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:55:02.197 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:55:02.212 +05:30  INF]  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:55:02.215 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:55:02.215 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 18.8472ms
+[2025-03-21 14:55:02.216 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:55:02.216 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 21.7267ms
+[2025-03-21 14:55:28.725 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:55:28.726 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:55:28.726 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:55:28.726 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:55:28.734 +05:30  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:55:28.740 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:55:28.741 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 15.066ms
+[2025-03-21 14:55:28.741 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:55:28.741 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 17.2075ms
+[2025-03-21 14:55:33.759 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:55:33.760 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:55:33.760 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:55:33.760 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:55:33.769 +05:30  INF]  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:55:33.770 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:55:33.771 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 10.5164ms
+[2025-03-21 14:55:33.771 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:55:33.771 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 12.6215ms
+[2025-03-21 14:55:37.653 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:55:37.654 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:55:37.654 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:55:37.654 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:55:37.661 +05:30  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:55:37.661 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:55:37.662 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 7.3614ms
+[2025-03-21 14:55:37.662 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:55:37.662 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 8.9105ms
+[2025-03-21 14:58:04.997 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:58:04.998 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:58:04.998 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:58:04.999 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:58:05.012 +05:30  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:58:05.013 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:58:05.013 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 13.488ms
+[2025-03-21 14:58:05.013 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:58:05.013 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 16.1274ms
+[2025-03-21 14:58:40.123 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 14:58:40.126 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 14:58:40.126 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:58:40.127 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 14:58:40.147 +05:30  INF]  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 14:58:40.148 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 14:58:40.149 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 22.2666ms
+[2025-03-21 14:58:40.149 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 14:58:40.151 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 27.7635ms
+[2025-03-21 15:00:34.211 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:00:34.212 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:00:34.213 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:00:34.214 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:00:34.240 +05:30  INF]  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:00:34.245 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:00:34.246 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 31.2411ms
+[2025-03-21 15:00:34.246 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:00:34.246 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 36.534ms
+[2025-03-21 15:14:32.870 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:14:32.872 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:14:32.872 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:14:32.873 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:14:35.244 +05:30  INF]  Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:14:35.246 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:14:35.249 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 2375.9744ms
+[2025-03-21 15:14:35.249 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:14:35.250 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 2380.8445ms
+[2025-03-21 15:25:45.503 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:25:45.506 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:25:45.507 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:25:45.508 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:25:48.629 +05:30  INF]  Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:25:48.633 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:25:48.635 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 3126.8081ms
+[2025-03-21 15:25:48.635 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:25:48.636 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 3133.3276ms
+[2025-03-21 15:26:30.844 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:26:30.847 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:26:30.847 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:26:30.847 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:26:30.900 +05:30  INF]  Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:26:30.903 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:26:30.903 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 55.6215ms
+[2025-03-21 15:26:30.903 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:26:30.908 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 63.6819ms
+[2025-03-21 15:27:11.721 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:27:11.722 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:27:11.722 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:27:11.722 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:27:11.737 +05:30  INF]  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:27:11.739 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:27:11.739 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 15.8924ms
+[2025-03-21 15:27:11.739 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:27:11.739 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 18.2719ms
+[2025-03-21 15:27:43.654 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:27:43.655 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:27:43.655 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:27:43.655 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:27:43.668 +05:30  INF]  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:27:43.671 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:27:43.671 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 15.6736ms
+[2025-03-21 15:27:43.671 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:27:43.671 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 18.4789ms
+[2025-03-21 15:28:05.010 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:28:05.013 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:28:05.013 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:28:05.013 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:28:05.036 +05:30  INF]  Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:28:05.036 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:28:05.037 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 23.6035ms
+[2025-03-21 15:28:05.037 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:28:05.037 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 26.7654ms
+[2025-03-21 15:28:23.205 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:28:23.206 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:28:23.206 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:28:23.206 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:28:23.227 +05:30  INF]  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:28:23.228 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:28:23.229 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 23.064ms
+[2025-03-21 15:28:23.229 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:28:23.229 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 24.9361ms
+[2025-03-21 15:28:37.987 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:28:37.988 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:28:37.989 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:28:37.989 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:28:38.219 +05:30  INF]  Executed DbCommand (105ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:28:38.220 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:28:38.224 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 234.9746ms
+[2025-03-21 15:28:38.228 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:28:38.228 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 240.9264ms
+[2025-03-21 15:28:49.250 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:28:49.253 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:28:49.253 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:28:49.253 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:28:49.265 +05:30  INF]  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:28:49.266 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:28:49.266 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 13.0952ms
+[2025-03-21 15:28:49.266 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:28:49.267 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 16.4591ms
+[2025-03-21 15:28:57.571 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:28:57.571 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:28:57.571 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:28:57.571 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:28:57.586 +05:30  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:28:57.588 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:28:57.588 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 16.6302ms
+[2025-03-21 15:28:57.588 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:28:57.588 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 18.2376ms
+[2025-03-21 15:29:21.797 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:29:21.798 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:29:21.798 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:29:21.798 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:29:21.850 +05:30  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:29:21.852 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:29:21.858 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 60.0636ms
+[2025-03-21 15:29:21.860 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:29:21.860 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 63.7862ms
+[2025-03-21 15:29:31.906 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:29:31.907 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:29:31.907 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:29:31.907 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:29:31.920 +05:30  INF]  Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:29:31.921 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:29:31.922 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 13.9851ms
+[2025-03-21 15:29:31.922 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:29:31.922 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 16.1131ms
+[2025-03-21 15:30:02.890 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:30:02.891 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:30:02.891 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:30:02.892 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:30:02.910 +05:30  INF]  Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:30:02.912 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:30:02.917 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 24.9122ms
+[2025-03-21 15:30:02.918 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:30:02.918 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 28.0762ms
+[2025-03-21 15:30:22.448 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:30:22.448 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:30:22.449 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:30:22.449 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:30:22.453 +05:30  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:30:22.456 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:30:22.457 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 7.9557ms
+[2025-03-21 15:30:22.457 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:30:22.457 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 9.6554ms
+[2025-03-21 15:30:30.567 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:30:30.571 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:30:30.571 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:30:30.571 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:30:30.584 +05:30  INF]  Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:30:30.585 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:30:30.585 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 13.8802ms
+[2025-03-21 15:30:30.585 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:30:30.586 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 18.9773ms
+[2025-03-21 15:30:41.279 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:30:41.280 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:30:41.281 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:30:41.281 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:30:41.288 +05:30  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:30:41.293 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:30:41.294 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 12.6289ms
+[2025-03-21 15:30:41.294 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:30:41.295 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 15.3217ms
+[2025-03-21 15:30:58.847 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:30:58.847 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:30:58.849 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:30:58.849 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:30:58.862 +05:30  INF]  Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:30:58.865 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:30:58.865 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 16.2559ms
+[2025-03-21 15:30:58.865 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:30:58.866 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 18.3708ms
+[2025-03-21 15:31:43.885 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:31:43.885 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:31:43.885 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:31:43.886 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:31:43.906 +05:30  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:31:43.908 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:31:43.908 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 22.1969ms
+[2025-03-21 15:31:43.908 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:31:43.908 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 22.9701ms
+[2025-03-21 15:32:03.353 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:32:03.354 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:32:03.354 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:32:03.354 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:32:03.358 +05:30  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:32:03.361 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:32:03.361 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 6.7566ms
+[2025-03-21 15:32:03.361 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:32:03.362 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 8.9178ms
+[2025-03-21 15:32:08.137 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:32:08.138 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:32:08.138 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:32:08.138 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:32:08.145 +05:30  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:32:08.157 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:32:08.157 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 19.3846ms
+[2025-03-21 15:32:08.158 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:32:08.158 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 20.7584ms
+[2025-03-21 15:32:55.130 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:32:55.133 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:32:55.133 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:32:55.133 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:32:55.148 +05:30  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:32:55.151 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:32:55.152 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 18.8051ms
+[2025-03-21 15:32:55.152 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:32:55.157 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 27.406ms
+[2025-03-21 15:33:09.559 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:33:09.560 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:33:09.561 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:33:09.561 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:33:09.573 +05:30  INF]  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:33:09.576 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:33:09.577 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 16.6076ms
+[2025-03-21 15:33:09.577 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:33:09.578 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 18.5774ms
+[2025-03-21 15:33:14.878 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:33:14.879 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:33:14.880 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:33:14.880 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:33:14.905 +05:30  INF]  Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:33:14.911 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:33:14.912 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 31.5329ms
+[2025-03-21 15:33:14.912 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:33:14.912 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 35.915ms
+[2025-03-21 15:33:28.576 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:33:28.576 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:33:28.576 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:33:28.577 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:33:28.587 +05:30  INF]  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:33:28.587 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:33:28.588 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 10.2115ms
+[2025-03-21 15:33:28.588 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:33:28.588 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 12.1719ms
+[2025-03-21 15:34:38.693 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:34:38.693 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:34:38.693 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:34:38.693 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:34:38.709 +05:30  INF]  Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:34:38.709 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:34:38.709 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 15.9516ms
+[2025-03-21 15:34:38.710 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:34:38.710 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 18.015ms
+[2025-03-21 15:34:49.513 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:34:49.513 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:34:49.514 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:34:49.515 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:34:49.521 +05:30  INF]  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:34:49.522 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:34:49.524 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 8.5777ms
+[2025-03-21 15:34:49.524 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:34:49.524 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 11.051ms
+[2025-03-21 15:39:32.012 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:39:32.016 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:39:32.016 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:39:32.021 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:39:32.421 +05:30  INF]  Executed DbCommand (52ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:39:32.426 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:39:32.427 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 405.2673ms
+[2025-03-21 15:39:32.427 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:39:32.427 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 416.0405ms
+[2025-03-21 15:39:40.769 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:39:40.769 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:39:40.769 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:39:40.770 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:39:40.810 +05:30  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:39:40.811 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:39:40.812 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 41.835ms
+[2025-03-21 15:39:40.812 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:39:40.812 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 43.5884ms
+[2025-03-21 15:40:10.460 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:40:10.460 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:40:10.460 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:40:10.460 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:40:10.475 +05:30  INF]  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:40:10.475 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:40:10.476 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 10.1207ms
+[2025-03-21 15:40:10.476 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:40:10.476 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 15.7616ms
+[2025-03-21 15:40:25.337 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:40:25.338 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:40:25.338 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:40:25.338 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:40:25.358 +05:30  INF]  Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:40:25.358 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:40:25.359 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 20.7853ms
+[2025-03-21 15:40:25.359 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:40:25.359 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 22.5754ms
+[2025-03-21 15:41:02.970 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:41:02.973 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:41:02.974 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:41:02.974 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:41:03.097 +05:30  INF]  Executed DbCommand (120ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+WHERE [o].[IsActive] = CAST(1 AS bit)
+ORDER BY [o].[Id]
+[2025-03-21 15:41:03.097 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:41:03.097 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 123.2283ms
+[2025-03-21 15:41:03.097 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:41:03.098 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 127.3552ms
+[2025-03-21 15:43:31.242 +05:30  INF]  Now listening on: https://localhost:7237
+[2025-03-21 15:43:31.286 +05:30  INF]  Now listening on: http://localhost:5226
+[2025-03-21 15:43:31.466 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2025-03-21 15:43:31.466 +05:30  INF]  Hosting environment: Development
+[2025-03-21 15:43:31.466 +05:30  INF]  Content root path: D:\POC_TQMS_V1\TQMS\Backend\Organization_API
+[2025-03-21 15:43:31.935 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/swagger/index.html - null null
+[2025-03-21 15:43:32.651 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/swagger/index.html - 200 null text/html;charset=utf-8 728.9672ms
+[2025-03-21 15:43:32.662 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/_framework/aspnetcore-browser-refresh.js - null null
+[2025-03-21 15:43:32.671 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 8.4198ms
+[2025-03-21 15:43:32.799 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/_vs/browserLink - null null
+[2025-03-21 15:43:32.873 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.8198ms
+[2025-03-21 15:43:32.926 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/swagger/v1/swagger.json - null null
+[2025-03-21 15:43:33.128 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 202.016ms
+[2025-03-21 15:45:10.977 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:45:10.997 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:45:11.001 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:45:11.040 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:45:12.301 +05:30  WRN]  No instantiatable types implementing `IEntityTypeConfiguration` were found while while scanning assembly 'TQMS_Admin_Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+[2025-03-21 15:45:15.251 +05:30  INF]  Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+[2025-03-21 15:45:15.373 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:45:15.395 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 4348.4762ms
+[2025-03-21 15:45:15.395 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:45:15.409 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 4438.0079ms
+[2025-03-21 15:52:13.871 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 15:52:13.889 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 15:52:13.889 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:52:13.890 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 15:52:14.080 +05:30  INF]  Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+[2025-03-21 15:52:14.084 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 15:52:14.085 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 194.6964ms
+[2025-03-21 15:52:14.085 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 15:52:14.085 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 214.5412ms
+[2025-03-21 16:53:24.022 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 16:53:24.028 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 16:53:24.028 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 16:53:24.029 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 16:53:24.254 +05:30  INF]  Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+[2025-03-21 16:53:24.255 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 16:53:24.256 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 226.5816ms
+[2025-03-21 16:53:24.257 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 16:53:24.260 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 238.6845ms
+[2025-03-21 19:48:59.934 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - null null
+[2025-03-21 19:48:59.948 +05:30  INF]  CORS policy execution successful.
+[2025-03-21 19:48:59.948 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 19:48:59.954 +05:30  INF]  Route matched with {action = "GetAll", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-21 19:49:00.434 +05:30  INF]  Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedBy], [o].[CreatedDate], [o].[IsActive], [o].[ModifiedBy], [o].[ModifiedDate], [o].[Name]
+FROM [OrganizationsType] AS [o]
+[2025-03-21 19:49:00.439 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Organization_Domain.Entities.OrganizationType, TQMS_Admin_Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-03-21 19:49:00.440 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API) in 485.4018ms
+[2025-03-21 19:49:00.440 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.GetAll (TQMS_Admin_API)'
+[2025-03-21 19:49:00.441 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType/getAll - 200 null application/json; charset=utf-8 507.318ms

@@ -1,0 +1,50 @@
+[2025-03-12 13:02:39.294 +05:30  INF]  Now listening on: https://localhost:7237
+[2025-03-12 13:02:39.328 +05:30  INF]  Now listening on: http://localhost:5226
+[2025-03-12 13:02:39.399 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2025-03-12 13:02:39.400 +05:30  INF]  Hosting environment: Development
+[2025-03-12 13:02:39.400 +05:30  INF]  Content root path: D:\POC_TQMS_V1\TQMS\Backend\Organization_API
+[2025-03-12 13:02:41.047 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/swagger/index.html - null null
+[2025-03-12 13:02:41.589 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/swagger/index.html - 200 null text/html;charset=utf-8 557.5781ms
+[2025-03-12 13:02:41.684 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/_framework/aspnetcore-browser-refresh.js - null null
+[2025-03-12 13:02:41.696 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 11.8141ms
+[2025-03-12 13:02:41.713 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/_vs/browserLink - null null
+[2025-03-12 13:02:41.862 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/_vs/browserLink - 200 null text/javascript; charset=UTF-8 149.031ms
+[2025-03-12 13:02:41.897 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/swagger/v1/swagger.json - null null
+[2025-03-12 13:02:42.033 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 136.8977ms
+[2025-03-12 13:03:00.627 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7237/api/OrganizationType - application/json 70
+[2025-03-12 13:03:00.640 +05:30  INF]  Executing endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.Create (TQMS_Admin_API)'
+[2025-03-12 13:03:00.674 +05:30  INF]  Route matched with {action = "Create", controller = "OrganizationType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TQMS_Organization_Application.Features.OrganizationType.Commands.CreateOrganizationTYpe.CreateOrganizationTypeCommand) on controller OrganizationType_API.Controllers.OrganizationTypeController (TQMS_Admin_API).
+[2025-03-12 13:03:04.414 +05:30  WRN]  No instantiatable types implementing `IEntityTypeConfiguration` were found while while scanning assembly 'TQMS_Admin_Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+[2025-03-12 13:03:06.161 +05:30  INF]  Executed DbCommand (96ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [OrganizationsType] ([Id], [CreatedBy], [CreatedDate], [IsActive], [ModifiedBy], [ModifiedDate], [Name])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+[2025-03-12 13:03:06.190 +05:30  INF]  Executing OkObjectResult, writing value of type 'TQMS_Organization_Application.Wrappers.Response`1[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-03-12 13:03:06.202 +05:30  INF]  Executed action OrganizationType_API.Controllers.OrganizationTypeController.Create (TQMS_Admin_API) in 5522.5284ms
+[2025-03-12 13:03:06.202 +05:30  INF]  Executed endpoint 'OrganizationType_API.Controllers.OrganizationTypeController.Create (TQMS_Admin_API)'
+[2025-03-12 13:03:06.207 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7237/api/OrganizationType - 200 null application/json; charset=utf-8 5580.1992ms
+[2025-03-12 16:16:29.421 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType - null null
+[2025-03-12 16:16:29.450 +05:30  INF]  Executing endpoint '405 HTTP Method Not Supported'
+[2025-03-12 16:16:29.454 +05:30  INF]  Executed endpoint '405 HTTP Method Not Supported'
+[2025-03-12 16:16:29.456 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType - 405 0 null 39.2024ms
+[2025-03-12 16:28:02.582 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType - null null
+[2025-03-12 16:28:02.616 +05:30  INF]  Executing endpoint '405 HTTP Method Not Supported'
+[2025-03-12 16:28:02.617 +05:30  INF]  Executed endpoint '405 HTTP Method Not Supported'
+[2025-03-12 16:28:02.617 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType - 405 0 null 36.9281ms
+[2025-03-12 16:37:10.668 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType - null null
+[2025-03-12 16:37:10.678 +05:30  INF]  Executing endpoint '405 HTTP Method Not Supported'
+[2025-03-12 16:37:10.680 +05:30  INF]  Executed endpoint '405 HTTP Method Not Supported'
+[2025-03-12 16:37:10.681 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType - 405 0 null 16.6605ms
+[2025-03-12 16:37:12.861 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType - null null
+[2025-03-12 16:37:12.873 +05:30  INF]  Executing endpoint '405 HTTP Method Not Supported'
+[2025-03-12 16:37:12.874 +05:30  INF]  Executed endpoint '405 HTTP Method Not Supported'
+[2025-03-12 16:37:12.875 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType - 405 0 null 20.0978ms
+[2025-03-12 17:07:04.769 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType - null null
+[2025-03-12 17:07:04.773 +05:30  INF]  Executing endpoint '405 HTTP Method Not Supported'
+[2025-03-12 17:07:04.773 +05:30  INF]  Executed endpoint '405 HTTP Method Not Supported'
+[2025-03-12 17:07:04.774 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType - 405 0 null 7.3493ms
+[2025-03-12 17:07:48.809 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7237/api/OrganizationType - null null
+[2025-03-12 17:07:48.814 +05:30  INF]  Executing endpoint '405 HTTP Method Not Supported'
+[2025-03-12 17:07:48.814 +05:30  INF]  Executed endpoint '405 HTTP Method Not Supported'
+[2025-03-12 17:07:48.870 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7237/api/OrganizationType - 405 0 null 20.6797ms

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TQMS_Admin_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fae3335669c1e14f606565039a6dba7f03486f56")]
 [assembly: System.Reflection.AssemblyProductAttribute("TQMS_Admin_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TQMS_Admin_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
